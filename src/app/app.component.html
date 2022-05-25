@@ -1,4 +1,5 @@
 <div class="wrapper">
-  <app-music-room></app-music-room>
-  <app-wooden-door></app-wooden-door>
+  <app-music-room [openedDoor]="openedDoor"></app-music-room>
+  <app-wooden-door (doorOpen)="enterRoom()"></app-wooden-door>
 </div>
+<router-outlet></router-outlet>
